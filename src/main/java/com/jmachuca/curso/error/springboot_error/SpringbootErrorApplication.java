@@ -1,4 +1,4 @@
-package com.jamchuca.curso.error.springboot_error;
+package com.jmachuca.curso.error.springboot_error;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

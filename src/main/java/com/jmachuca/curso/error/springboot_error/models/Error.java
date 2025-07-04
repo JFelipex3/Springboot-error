@@ -1,4 +1,4 @@
-package com.jamchuca.curso.error.springboot_error.models;
+package com.jmachuca.curso.error.springboot_error.models;
 
 import java.util.Date;
 
@@ -36,7 +36,7 @@ public class Error {
     public Date getDate() {
         return date;
     }
-    
+
     public void setDate(Date date) {
         this.date = date;
     }
