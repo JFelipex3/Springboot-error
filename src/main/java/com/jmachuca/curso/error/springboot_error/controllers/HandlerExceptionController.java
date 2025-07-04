@@ -22,6 +22,10 @@ public class HandlerExceptionController {
         error.setMessage(ex.getMessage());
         error.setStatus(HttpStatus.INTERNAL_SERVER_ERROR.value());
 
-        return ResponseEntity.internalServerError().body(error);
+        // Forma #1
+        // return ResponseEntity.internalServerError().body(error);
+
+        // Forma #2
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR.value()).body(error);
     }
 }
