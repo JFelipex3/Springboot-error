@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.jmachuca.curso.error.springboot_error.models.domain.User;
@@ -11,17 +12,8 @@ import com.jmachuca.curso.error.springboot_error.models.domain.User;
 @Service
 public class UserServiceImpl implements UserService{
 
+    @Autowired
     private List<User> users;
-
-    public UserServiceImpl() {
-        this.users = new ArrayList<>();
-
-        users.add(new User(1L, "Pepe", "Gonzalez"));
-        users.add(new User(2L, "Juan", "Perez"));
-        users.add(new User(3L, "Maria", "Lopez"));
-        users.add(new User(4L, "Ana", "Garcia"));
-        users.add(new User(5L, "Luis", "Rodriguez"));
-    } 
 
     @Override
     public List<User> findAll() {
